@@ -12,8 +12,8 @@ function setup() {
   video.size(width, height);
   video.hide();
 
-  // 載入 facemesh
-  faceMesh = ml5.facemesh(video, modelReady);
+  // 載入 faceMesh
+  faceMesh = ml5.faceMesh(video, modelReady); // 這裡改成 faceMesh
   faceMesh.on('predict', gotResults);
 }
 
